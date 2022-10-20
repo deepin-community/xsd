@@ -1,0 +1,32 @@
+Description: Correct some typos
+Author: Jörg Frings-Fürst <debian@jff.email>
+Forwarded: not-needed
+Last-Update: 2017-11-09
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+Index: trunk/xsd/xsd/cxx/tree/tree-header.cxx
+===================================================================
+--- trunk.orig/xsd/xsd/cxx/tree/tree-header.cxx
++++ trunk/xsd/xsd/cxx/tree/tree-header.cxx
+@@ -972,7 +972,7 @@ namespace CXX
+                  << " * @brief Assign the underlying enum value." << endl
+                  << " *" << endl
+                  << " * @param v A enum value." << endl
+-                 << " * @return A refernce to the instance." << endl
++                 << " * @return A reference to the instance." << endl
+                  << " */" << endl;
+             }
+ 
+Index: trunk/xsd/xsd/processing/inheritance/processor.cxx
+===================================================================
+--- trunk.orig/xsd/xsd/processing/inheritance/processor.cxx
++++ trunk/xsd/xsd/processing/inheritance/processor.cxx
+@@ -290,7 +290,7 @@ namespace Processing
+                 wcerr << t.file () << ":" << t.line () << ":" << t.column ()
+                       << " error: nested anonymous type in '" << t.name ()
+                       << "' or '" << type.name () << "' inherits from one of "
+-                      << "these types and makes them mutually dependant"
++                      << "these types and makes them mutually dependent"
+                       << endl;
+ 
+                 wcerr << t.file () << ":" << t.line () << ":" << t.column ()
